@@ -1,27 +1,27 @@
 
-# #mcq evaluation:
-# import numpy as np
-# A = str(input("answer to the question no A:"))
-# B = str(input("answer to the question no B:"))
-# C = str(input("answer to the question no C:"))
-# D = str(input("answer to the question no D:"))
-# E = str(input("answer to the question no E:"))
-# submitted_answers = np.array([A,B,C,D,E])
-# correct_answers = np.array(['a','b','c','d','a'])
-# total_marks = 0
-# wrong_answers = 0
-# blank = 0
-# n = len(submitted_answers)
-# for i in range(n):
-#     if submitted_answers[i] == correct_answers[i]:
-#         total_marks += 1
-#     elif submitted_answers[i] == '':
-#         blank += 1
-#     elif submitted_answers[i] != correct_answers[i] and submitted_answers[i]!='':
-#         total_marks -= 0.25
-#         wrong_answers += 1
-#         print(f"wrong answer {submitted_answers[i]} and the correct anwers would be: {correct_answers[i]}")
-# print(f'total marks is: {total_marks}\n{wrong_answers} wrong answers were given and\n{blank} were kept blank.')
+#mcq evaluation:
+import numpy as np
+A = str(input("answer to the question no A:"))
+B = str(input("answer to the question no B:"))
+C = str(input("answer to the question no C:"))
+D = str(input("answer to the question no D:"))
+E = str(input("answer to the question no E:"))
+submitted_answers = np.array([A,B,C,D,E])
+correct_answers = np.array(['a','b','c','d','a'])
+total_marks = 0
+wrong_answers = 0
+blank = 0
+n = len(submitted_answers)
+for i in range(n):
+    if submitted_answers[i] == correct_answers[i]:
+        total_marks += 1
+    elif submitted_answers[i] == '':
+        blank += 1
+    elif submitted_answers[i] != correct_answers[i] and submitted_answers[i]!='':
+        total_marks -= 0.25
+        wrong_answers += 1
+        print(f"wrong answer {submitted_answers[i]} and the correct anwers would be: {correct_answers[i]}")
+print(f'total marks is: {total_marks}\n{wrong_answers} wrong answers were given and\n{blank} were kept blank.')
 
 #correlation
 import numpy as np
@@ -62,3 +62,4 @@ val2 = list(map(float,input("enter the value of vector y:").split()))
 x = np.array(val1)
 y = np.array(val2)
 rel_finder(x,y)
+
